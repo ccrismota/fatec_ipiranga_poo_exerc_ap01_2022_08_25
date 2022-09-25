@@ -1,6 +1,5 @@
-import javax.swing.JOptionPane;
 public class TesteVeiculo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Veiculo carro1 = new Veiculo("GOL", 2018, 140.0);
 
         System.out.println("\n"+"Carro I: " + carro1.getModelo() + " - Ano: " + carro1.getAno() +" - Velocidade Atual: " + carro1.getVelocidade()+"\n");

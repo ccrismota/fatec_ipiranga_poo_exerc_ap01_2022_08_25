@@ -42,7 +42,7 @@ public class Veiculo {
     //#endregion
 
     //#region METHODS (Regras de negócio)
-    public void acelerar(String veiculo){
+    public void acelerar(String veiculo) throws InterruptedException{
         System.out.println(veiculo + " acelerando...");
         while(this.velocidade < 200){
             this.velocidade += 10;
@@ -52,10 +52,11 @@ public class Veiculo {
             } else {
                 System.out.println(veiculo + " Aumentando velocidade..." + this.velocidade);
             }
+            Thread.sleep(1000);
         }
     }
 
-    public void parar(String veiculo){
+    public void parar(String veiculo) throws InterruptedException{
         while(this.velocidade != 0){
             this.velocidade -= 10;
             if(this.velocidade <= 0) {
@@ -63,6 +64,7 @@ public class Veiculo {
             } else {
                 System.out.println(veiculo + " Reduzindo velocidade..." + this.velocidade);
             }
+            Thread.sleep(1000);
         }
     }
 
