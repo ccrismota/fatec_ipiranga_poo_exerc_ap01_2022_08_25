@@ -4,6 +4,14 @@ public class Veiculo {
     private int ano;
     private double velocidade;
 
+     //#region CONSTRUTOR
+     public Veiculo(String modelo, int ano, double velocidade){
+        this.modelo = modelo;
+        this.ano = ano;
+        this.velocidade = velocidade;
+    }
+    //#endregion
+
     //#region  GETTERS & SETTERS (Encapsulamento)
 
     //Setters
